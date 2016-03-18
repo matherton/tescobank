@@ -1,0 +1,170 @@
+#animal {
+ width: 100%;
+ height: 50px;
+}
+#zebra {
+ width: 10em;
+ height: 5em;
+}
+#aardvark {
+ width: 100px;
+}
+#cow {
+ height: 50%;
+}
+/*responsive test CSS*/
+* {
+ font-size: 100%;
+ font-family: Arial;
+}
+section.order {
+	width: 75%;
+	height: 500px;
+	border: 2px solid #bbbbbb;
+}
+article.currency h1, article.purchase h1 {
+	margin-left: 5%;
+	font-size: 1.5em;
+}
+form.currency {
+	position: relative;
+	padding: 2% 8%;
+}
+.purchase-options {
+	position: relative;
+	padding: 0 8%;
+	width: 100%;
+}
+label[for="currecy-type-options"] {
+	position: relative;
+    top: -27px;
+}
+label[for="enquiry"], select#enquiry, label[for="amount"] {
+	display:block;
+}
+article.currency {
+	width: 45%;
+	height: 99.5%;
+	float: left;
+	background: #0b5394;
+    color: #fff;
+    border: 2px #bbbbbb dashed;
+}
+article.purchase {
+	height: 100%;
+	width: 45%;
+	float: left;
+}
+#currecy-type-options {
+	display: inline-block;
+}
+input[value="travellers-cheques"] {
+	margin-top: 8px;
+}
+#choose-currency {
+	padding-top: 20%;
+	display:block;
+}
+#enquiry {
+	margin-bottom: 20%;
+	width: 100%;
+}
+#submit-button {
+	display: block;
+	margin: auto;
+    margin-top: 15%;
+}
+input[type=text], select#enquiry {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 3px;
+}
+
+select#enquiry {
+	height: 2em;
+}
+
+input#amount {
+	width: 80%;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:8px 15px; 
+    background:#ff0000;
+    color: #fff;
+    border: 0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+.pound {
+
+}
+.pound:before { 
+    content: "\00a3";
+    position: absolute;
+    left: 20px;
+    padding-top: 8px;
+}
+.purchase-options h2, .purchase-options h3 {
+    margin-left: 1em;
+}
+.purchase-options h2:before {
+	content: '';
+	position:absolute;
+  	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-left: 25px solid #9a9a9a;
+	border-bottom: 12px solid transparent;
+	left: 16px;
+    top: 48px;
+}
+
+.purchase-options h3:before {
+	content: '';
+	position:absolute;
+  	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-left: 25px solid #9a9a9a;
+	border-bottom: 12px solid transparent;
+	left: 16px;
+    top: 153px;
+}
+
+
+@media only screen and (max-width: 945px) {
+	
+	article.purchase {
+		float: none;
+		width: 90%;
+	}
+
+	article.currency {
+		float: none;
+		width: 100%;
+	}
+
+	section.order {
+		width: 100%;
+		height: auto;
+	}
+
+	#choose-currency {
+    	padding-top: 5%;
+	}
+
+	#enquiry {
+    	margin-bottom: 5%;
+	}
+
+	#submit-button {
+		margin-top: 5%;
+	}
+}

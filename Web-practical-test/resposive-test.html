@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Responsive Tesco Bank test</title>
+  <meta name="description" content="Responsive Tesco Bank test">
+  <meta name="author" content="Mark Atherton">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <section class="order">
+
+    <article class="currency">
+      <h1>Order your currency</h1>
+      <form class="currency">
+        <label for="currecy-type-options">I want to buy</label>
+        <div id="currecy-type-options">
+          <input type="radio" name="currency-type" value="cash">Cash<br>
+          <input type="radio" name="currency-type" value="travellers-cheques">Travellers Cheques<br>
+        </div>
+        <div id="choose-currency"> 
+          <label for="enquiry">Choose your currency </label>
+          <select id="enquiry" name="enquiry">
+              <option value="general">Euro (EUR)</option>
+              <option value="support">Pound (GBP)</option>
+              <option value="sales">Dollar (USD)</option>
+          </select>
+          <label for="amount">How much?</label>
+          <div class="pound">
+            <input id="amount" type="text" name="amount">
+          </div>
+          <input type="submit" value="Buy Now" id="submit-button">
+        </div>
+      </form>
+    </article>
+
+    <article class="purchase">
+      <h1>Buy online or by phone</h1>
+      <div class="purchase-options">
+        <p>When it comes to money, we have a range of options to make it easier for you.</p>
+        <h2>Click &amp; Collect</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Home Delivery</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+      </div>
+    </article>
+
+  </section>
+
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
